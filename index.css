@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+  background-color: #000000;
+  overflow: hidden;
+}
+#main {
+
+}
+.svgContainer{
+  position: absolute;
+  top: 0;
+}
+.centerContainer{
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  max-width: 693px;
+  z-index: 18;
+  align-items: center;
+  color: brown;
+}
+.container {
+  width: 100%;
+  background-color: black;
+  padding: 10px;
+}
+.contacts {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+}
+.contacts > img, a{
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: middle;
+}
+
+.st0 {
+  fill: none;
+  stroke: #265c09;
+  stroke-miterlimit: 10;
+  animation: lines 3s infinite; 
+  animation-fill-mode: forwards;
+  animation-direction: alternate;
+}
+.st1 {
+  fill: none;
+  stroke: none;
+  stroke-linecap: round;
+  stroke-miterlimit: 10;
+  animation: blink 3s infinite; 
+  animation-direction: alternate;
+  -webkit-animation-timing-function: linear; /* Chrome, Safari, Opera */
+  animation-timing-function: linear;
+}
+.title { 
+  fill: none;
+  stroke: #265c09;
+  stroke-linecap: round;
+  stroke-miterlimit: 10;
+  stroke-width: 0;
+  animation: move 3s linear; 
+  animation-fill-mode: forwards;
+  animation-direction: alternate;
+ }
+
+ @keyframes move {
+  100% {
+      stroke-width: 0.2px;
+      stroke-dashoffset: 0;
+  }
+}
+@keyframes lines {
+  100% {
+      stroke-width: 2;
+      stroke-dashoffset: 0;
+  }
+}
+ @keyframes blink {
+  20% {
+    fill: rgba(255, 255, 255, 0.134);
+}
+  40% {
+    fill: rgba(255, 255, 255, 0.367);
+}
+  60% {
+    fill: rgba(255, 255, 255, 0.579);
+}
+  80% {
+    fill: rgba(255, 255, 255, 0.784);
+}
+  100% {
+      fill: white;
+      stroke: #265c09
+  }
+}
+
+/* .st2{fill:#FFC107;}
+.st3{fill:#6879D9;}
+.st4{fill:#1B80E4;}
+.st5{fill:#603A87;}
+.st6{fill:#1E91CF;}
+.st7{fill:#F84437;} */
