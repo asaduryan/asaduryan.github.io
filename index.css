@@ -33,11 +33,11 @@ body {
 }
 .contacts > img, a{
   width: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: middle;
 }
-
+a {
+  display: grid;
+  align-content: center;
+}
 .st0 {
   fill: none;
   stroke: #265c09;
@@ -61,7 +61,7 @@ body {
   stroke: #265c09;
   stroke-linecap: round;
   stroke-miterlimit: 10;
-  stroke-width: 0;
+  stroke-width: 0.6;
   animation: move 3s linear; 
   animation-fill-mode: forwards;
   animation-direction: alternate;
@@ -69,7 +69,7 @@ body {
 
  @keyframes move {
   100% {
-      stroke-width: 0.2px;
+      stroke-width: 2px;
       stroke-dashoffset: 0;
   }
 }
@@ -97,10 +97,3 @@ body {
       stroke: #265c09
   }
 }
-
-/* .st2{fill:#FFC107;}
-.st3{fill:#6879D9;}
-.st4{fill:#1B80E4;}
-.st5{fill:#603A87;}
-.st6{fill:#1E91CF;}
-.st7{fill:#F84437;} */

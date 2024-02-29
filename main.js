@@ -9,6 +9,7 @@ window.onload = (event) => {
 
   let namepath = document.querySelector(".title");
   let length = namepath.getTotalLength();
+  namepath.style.transition = namepath.style.WebkitTransition = 'none';
   namepath.style.strokeDasharray = length + ' ' + length;
   namepath.style.strokeDashoffset = length;
 };
